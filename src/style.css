@@ -60,7 +60,7 @@ select {
     height: fit-content;
     margin: auto;
 	margin-top: 5%;
-	margin-bottom: 15%;
+	margin-bottom: 35px;
     background-color: white;
     border-radius: 15px;
     box-shadow: 6px 6px 2px 1px  #f46b45;
@@ -215,7 +215,6 @@ li::marker {
 		align-items: start;
 		padding: 25px;
 		margin-top: 25px;
-		margin-bottom: 35px;
 	}
 	
 	.backgroundImage {
