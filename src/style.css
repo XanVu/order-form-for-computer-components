@@ -1,0 +1,239 @@
+html, body {
+  overflow-x: hidden;
+  height: 100%;
+  position: fixed;
+  font-family: "Bahnschrift"; 
+  width: 100%;
+  left: 0;
+  top: 0;	
+  margin: 0;
+  background: rgb(253, 226, 167) fixed;
+}
+
+.header {
+	top: 0;
+    left: 0;
+    display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+    margin: 0 auto;
+    width: 100%;
+    max-width: 100%;
+    box-shadow: none;
+    position: fixed;
+    height: 8%;
+	max-height: 65px;
+    overflow: hidden;
+    z-index: 2;
+	text-align: center;
+	border-bottom: black 2px solid;
+	font-size: larger;
+	font-weight: bold;
+    background: linear-gradient(to top, #f46b45, #eea849);
+}
+
+select { 
+    position: relative;
+	background-position: right 10px center;
+	background-size: auto 50%;
+	border-radius: 10px;
+	border: none;
+	padding: 10px 30px 10px 10px;
+	outline: none;
+	border: black 2px solid;
+  }
+
+#select-wrapper {
+    width: 100%;
+    margin: auto;
+    margin-top: 85px;
+    text-align: center;
+}
+
+.product-cart {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+    width: 75%;
+    height: fit-content;
+    margin: auto;
+	margin-top: 5%;
+	margin-bottom: 15%;
+    background-color: white;
+    border-radius: 15px;
+    box-shadow: 6px 6px 2px 1px  #f46b45;
+	padding: 5%;
+	padding-bottom: 15px;
+}
+
+.big-number {
+	font-size: xx-large;
+	text-align: left;
+	margin: 10px;
+}
+
+.small-number{
+	font-size: medium;
+	text-align: left;
+}
+
+h1, h3, li {
+	text-align: left;
+	margin: 10px;
+}
+
+p {
+	text-align: justify;
+	margin: 10px;
+}
+
+.header p {
+	text-align: center;
+}
+
+.add-btn {
+	width: 100%;
+	margin: auto;
+	background: linear-gradient(to top, #f46b45, #eea849);
+	font-size: medium;
+	color: white;
+	padding: 10px;
+	border-radius: 10px;
+	border: none;
+}
+
+.add-btn:active {
+	background: orangered;
+}
+
+ul {
+	padding-inline-start: 20px;
+}
+
+li::marker {
+	color: orange;
+  }
+
+.thin-font{
+	font-weight: 100;
+}
+
+.backgroundImage {
+	width: 100%;
+	height: 35vh;
+	margin: auto;
+	border-radius: 10px;
+	background-size: cover;
+	background-position: center;
+} 
+
+.motherboards {
+	background-image: url(/Images/motherboard.jpg);
+}
+
+.cpus {
+	background-image: url(/Images/cpu.jpg);
+}
+
+.gpus {
+	background-image: url(/Images/gpu.jpg);
+}
+
+.ram {
+	background-image: url(/Images/ram.jpg);
+}
+
+.storage {
+	background-image: url(/Images/storage.jpg);
+}
+
+.cooling {
+	background-image: url(/Images/cooling.jpg);
+}
+
+.powerSupply {
+	background-image: url(/Images/powerSupply.png);
+}
+
+.soundCard {
+	background-image: url(/Images/sound.jpg);
+}
+
+.networkCard {
+	background-image: url(/Images/network.jpg);
+}
+
+.cases {
+	background-image: url(/Images/cases.jpg);
+}
+
+.cables {
+	background-image: url(/Images/cables.jpg);
+}
+
+
+@media (min-width: 640px) {
+
+	.header{
+		height: 10%;
+	}
+
+	#select-wrapper {
+		margin-top: 100px;
+	}
+
+	.product-cart {
+		flex-direction: row;
+		align-items: start;
+		width: 80%;
+		height: 35%;
+		padding: 25px;
+		margin-top: 25px;
+	}
+	
+	.backgroundImage {
+		width: 100%;
+		height: 100%;
+		min-height: 400px;
+		margin: 0;
+		margin-right: 25px;
+	} 
+}
+
+@media (min-width: 768px) {
+
+	#select-wrapper {
+		margin-top: 100px;
+	}
+
+	.product-cart {
+		width: 80%;
+		height: fit-content;
+		flex-direction: row;
+		align-items: start;
+		padding: 25px;
+		margin-top: 25px;
+		margin-bottom: 35px;
+	}
+	
+	.backgroundImage {
+		width: 100%;
+		max-width: 400px;
+		height: 375px;
+		margin-right: 25px;
+		}   
+	}
+
+@media (min-width: 1024px) {
+	
+	.product-cart {
+		max-width: 1200px;
+		max-height: 400px;
+	}
+
+	.add-btn {
+		width: 50%;
+	}
+}
